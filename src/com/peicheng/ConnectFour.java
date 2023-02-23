@@ -136,7 +136,15 @@ public class ConnectFour {
                 System.out.print("Please drop a disk at column 0 to 6: ");
                 scan = new Scanner(System.in);
                 int c = scan.nextInt();
+                if(c > 6 || c < 0){
+                    System.out.println("There is no column " + c +"!!");
+                    continue;
+                }
                 int r = drop('Y', c, board);
+                if(r == -1){
+                    System.out.println("This column is full!");
+                    continue;
+                }
                 printBoard(board);
                 play = !checkWin(r, c, 'Y', 0, board);
             }else{
@@ -144,7 +152,15 @@ public class ConnectFour {
                 System.out.print("Please drop a disk at column 0 to 6: ");
                 scan = new Scanner(System.in);
                 int c = scan.nextInt();
+                if(c > 6 || c < 0){
+                    System.out.println("There is no column " + c + "!!");
+                    continue;
+                }
                 int r = drop('R', c, board);
+                if(r == -1){
+                    System.out.println("This column is full!");
+                    continue;
+                }
                 printBoard(board);
                 play = !checkWin(r, c, 'R', 0, board);
             }
