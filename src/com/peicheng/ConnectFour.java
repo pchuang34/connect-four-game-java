@@ -132,7 +132,7 @@ public class ConnectFour {
             Scanner scan;
             if(yellow){
                 System.out.println("Yellow's turn:");
-                System.out.print("Please drop a disk at column 0 to 6: ");
+                System.out.print("Please drop a disc at column 0 to 6: ");
                 scan = new Scanner(System.in);
                 int c = scan.nextInt();
                 if(c > 6 || c < 0){
@@ -148,7 +148,7 @@ public class ConnectFour {
                 play = !checkWin(r, c, 'Y', 0, board);
             }else{
                 System.out.println("Red's turn:");
-                System.out.print("Please drop a disk at column 0 to 6: ");
+                System.out.print("Please drop a disc at column 0 to 6: ");
                 scan = new Scanner(System.in);
                 int c = scan.nextInt();
                 if(c > 6 || c < 0){
