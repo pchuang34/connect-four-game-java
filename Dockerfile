@@ -1,4 +1,4 @@
 FROM openjdk:17
 COPY ./out/production/Connect-four/ /app
 WORKDIR /app
-ENTRYPOINT ["java","Connect-four"]
+ENTRYPOINT ["java","com/peicheng/ConnectFour"]
