@@ -5,7 +5,7 @@ This project provides Dockerfile for building Docker Image of Connect 4
 
 Connect 4 is a two-player game in which each player takes turns dropping colored discs into a vertical grid. The goal of the game is to connect four of one's own discs of the same color vertically, horizontally, or diagonally before your opponent does.
 
-Running the image, users will be able to input the column number in the command line to drop their disc in the desired column. 
+Running the Docker Container, users will be able to input the column number in the command line to drop their disc in the desired column. 
 
 Images:
 <p align="center" width="100%">
