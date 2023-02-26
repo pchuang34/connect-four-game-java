@@ -1,6 +1,5 @@
 package com.peicheng;
 
-
 import java.util.Scanner;
 
 public class ConnectFour {
